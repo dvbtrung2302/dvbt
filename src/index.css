@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+:root {
+  --main-color: #5B6969;
+  --main-border-color: #252525;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #111;
+  overflow: overlay;
+}
+
+code {
+  font-family: 'Poppins' ,source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.separator {
+  border-top: 1px solid var(--main-border-color);
+  margin: 70px auto 55px;
+  max-width: 40%;
+}
+
+.Home, .About, .Portfolio, .Contact, .Blog {
+  animation: page_refresh .6s ease-out;
+}
+
+@keyframes page_refresh {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .ProjectDetail {
+    width: 100%!important;
+    height: 100%!important;
+    border-radius: unset!important;
+  }
+
+  .ProjectDetail h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  .About, .Portfolio, .Contact {
+    margin-top: 80px!important;
+  }
+
+  .Achievement {
+    padding: 15px 20px 20px 25px!important;
+  }
+
+  .Achievement .text {
+    padding-left: 0!important;
+  }
+
+  .Achievement .text::before {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .Home .intro h6 {
+    font-size: 18px;
+  }
+
+  .Home .intro h1 {
+    font-size: 30px!important;
+  }
+
+  .Home .intro p {
+    font-size: 14px;
+  }
+}
