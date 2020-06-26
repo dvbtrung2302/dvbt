@@ -28,13 +28,13 @@ const Topbar = (props) => {
 
   const renderHeader = () => {
     switch(props.location.pathname) {
-      case '/dvbt/about': 
+      case '/about': 
         return { bg: 'resume', main: 'about', sub: 'me' };
-      case '/dvbt/portfolio':
+      case '/portfolio':
         return { bg: 'works', main: 'my', sub: 'portfolio' };
-      case '/dvbt/contact':
+      case '/contact':
         return { bg: 'contact', main: 'get in', sub: 'touch' };
-      case '/dvbt/blog':
+      case '/blog':
         return { bg: 'posts', main: 'my', sub: 'blogs'};
       default:
         return { bg: '', main: '', sub: '' };
@@ -47,7 +47,7 @@ const Topbar = (props) => {
     <div 
       className="Topbar d-block d-sm-none"
       style={
-        props.location.pathname === '/dvbt/' ? {
+        props.location.pathname === '/' ? {
           visibility: "hidden"
         } : null
       }
@@ -57,7 +57,7 @@ const Topbar = (props) => {
       <ul 
         className={isClick ? "nav nav-active" : "nav"}
         style={
-          props.location.pathname === '/dvbt/' ? {
+          props.location.pathname === '/' ? {
             visibility: "visible"
           } : null
         }

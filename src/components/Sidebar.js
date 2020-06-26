@@ -15,11 +15,11 @@ import '../css/Sidebar.css';
 
 const Sidebar = (props) => {
   const nav = [
-    { name: 'HOME', url: '/dvbt/', icon: <FaHome />},
-    { name: 'ABOUT', url: '/dvbt/about', icon: <FaUserAlt />},
-    { name: 'PORTFOLIO', url: '/dvbt/portfolio', icon: <FaBriefcase />},
-    { name: 'CONTACT', url: '/dvbt/contact', icon: <FaEnvelopeOpen />},
-    { name: 'BLOG', url: '/dvbt/blog', icon: <FaComments />}
+    { name: 'HOME', url: '/', icon: <FaHome />},
+    { name: 'ABOUT', url: '/about', icon: <FaUserAlt />},
+    { name: 'PORTFOLIO', url: '/portfolio', icon: <FaBriefcase />},
+    { name: 'CONTACT', url: '/contact', icon: <FaEnvelopeOpen />},
+    { name: 'BLOG', url: '/blog', icon: <FaComments />}
   ]
   return(
     <div className="Sidebar d-none d-sm-flex">
