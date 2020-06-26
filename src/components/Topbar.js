@@ -47,7 +47,7 @@ const Topbar = (props) => {
     <div 
       className="Topbar d-block d-sm-none"
       style={
-        props.location.pathname === '/dvbt' ? {
+        props.location.pathname === '/dvbt/' ? {
           visibility: "hidden"
         } : null
       }
@@ -57,7 +57,7 @@ const Topbar = (props) => {
       <ul 
         className={isClick ? "nav nav-active" : "nav"}
         style={
-          props.location.pathname === '/dvbt' ? {
+          props.location.pathname === '/dvbt/' ? {
             visibility: "visible"
           } : null
         }

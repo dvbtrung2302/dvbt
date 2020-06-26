@@ -15,7 +15,7 @@ import '../css/Sidebar.css';
 
 const Sidebar = (props) => {
   const nav = [
-    { name: 'HOME', url: '/dvbt', icon: <FaHome />},
+    { name: 'HOME', url: '/dvbt/', icon: <FaHome />},
     { name: 'ABOUT', url: '/dvbt/about', icon: <FaUserAlt />},
     { name: 'PORTFOLIO', url: '/dvbt/portfolio', icon: <FaBriefcase />},
     { name: 'CONTACT', url: '/dvbt/contact', icon: <FaEnvelopeOpen />},
