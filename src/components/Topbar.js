@@ -19,22 +19,22 @@ const Topbar = (props) => {
   const [ isClick, setClick ] = useState(false);
 
   const nav = [
-    { name: 'HOME', url: '/', icon: <FaHome />},
-    { name: 'ABOUT', url: '/about', icon: <FaUserAlt />},
-    { name: 'PORTFOLIO', url: '/portfolio', icon: <FaBriefcase />},
-    { name: 'CONTACT', url: '/contact', icon: <FaEnvelopeOpen />},
-    { name: 'BLOG', url: '/blog', icon: <FaComments />}
+    { name: 'HOME', url: '/dvbt', icon: <FaHome />},
+    { name: 'ABOUT', url: '/dvbt/about', icon: <FaUserAlt />},
+    { name: 'PORTFOLIO', url: '/dvbt/portfolio', icon: <FaBriefcase />},
+    { name: 'CONTACT', url: '/dvbt/contact', icon: <FaEnvelopeOpen />},
+    { name: 'BLOG', url: '/dvbt/blog', icon: <FaComments />}
   ];
 
   const renderHeader = () => {
     switch(props.location.pathname) {
-      case '/about': 
+      case '/dvbt/about': 
         return { bg: 'resume', main: 'about', sub: 'me' };
-      case '/portfolio':
+      case '/dvbt/portfolio':
         return { bg: 'works', main: 'my', sub: 'portfolio' };
-      case '/contact':
+      case '/dvbt/contact':
         return { bg: 'contact', main: 'get in', sub: 'touch' };
-      case '/blog':
+      case '/dvbt/blog':
         return { bg: 'posts', main: 'my', sub: 'blogs'};
       default:
         return { bg: '', main: '', sub: '' };
@@ -47,7 +47,7 @@ const Topbar = (props) => {
     <div 
       className="Topbar d-block d-sm-none"
       style={
-        props.location.pathname === '/' ? {
+        props.location.pathname === '/dvbt' ? {
           visibility: "hidden"
         } : null
       }
@@ -57,7 +57,7 @@ const Topbar = (props) => {
       <ul 
         className={isClick ? "nav nav-active" : "nav"}
         style={
-          props.location.pathname === '/' ? {
+          props.location.pathname === '/dvbt' ? {
             visibility: "visible"
           } : null
         }
