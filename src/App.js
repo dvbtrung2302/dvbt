@@ -28,13 +28,13 @@ function App() {
       <div className="App">
         <Topbar />
         <Sidebar />
-        <Route path="/" render={() => <Preloader loading={loading} />} />
+        <Route path="/dvbt" render={() => <Preloader loading={loading} />} />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/dvbt" component={Home} />
+          <Route exact path="/dvbt/about" component={About} />
+          <Route exact path="/dvbt/portfolio" component={Portfolio} />
+          <Route exact path="/dvbt/contact" component={Contact} />
+          <Route exact path="/dvbt/blog" component={Blog} />
         </Switch>
       </div>
     </Router>
