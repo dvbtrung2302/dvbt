@@ -13,6 +13,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import NotFound from './pages/404';
 import { useState } from 'react';
 import Preloader from './components/Preloader';
 
@@ -26,15 +27,16 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Topbar />
-        <Sidebar />
-        <Route path="/dvbt" render={() => <Preloader loading={loading} />} />
+        <Route exact path={["/", "/about", "/portfolio", "/contact", "/blog"]} component={Topbar} />
+        <Route exact path={["/", "/about", "/portfolio", "/contact", "/blog"]} component={Sidebar} />
+        <Route path="/" render={() => <Preloader loading={loading} />} />
         <Switch>
-          <Route exact path="/dvbt" component={Home} />
-          <Route exact path="/dvbt/about" component={About} />
-          <Route exact path="/dvbt/portfolio" component={Portfolio} />
-          <Route exact path="/dvbt/contact" component={Contact} />
-          <Route exact path="/dvbt/blog" component={Blog} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="*" component={NotFound} /> 
         </Switch>
       </div>
     </Router>

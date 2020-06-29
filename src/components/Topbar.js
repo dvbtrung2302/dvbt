@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { 
   Link,
   withRouter 
@@ -16,18 +17,19 @@ import Burger from './Burger';
 import Header from './Header';
 
 const Topbar = (props) => {
+  const { location } = props;
   const [ isClick, setClick ] = useState(false);
 
   const nav = [
-    { name: 'HOME', url: '/dvbt', icon: <FaHome />},
-    { name: 'ABOUT', url: '/dvbt/about', icon: <FaUserAlt />},
-    { name: 'PORTFOLIO', url: '/dvbt/portfolio', icon: <FaBriefcase />},
-    { name: 'CONTACT', url: '/dvbt/contact', icon: <FaEnvelopeOpen />},
-    { name: 'BLOG', url: '/dvbt/blog', icon: <FaComments />}
+    { name: 'HOME', url: '/', icon: <FaHome />},
+    { name: 'ABOUT', url: '/about', icon: <FaUserAlt />},
+    { name: 'PORTFOLIO', url: '/portfolio', icon: <FaBriefcase />},
+    { name: 'CONTACT', url: '/contact', icon: <FaEnvelopeOpen />},
+    { name: 'BLOG', url: '/blog', icon: <FaComments />}
   ];
 
   const renderHeader = () => {
-    switch(props.location.pathname) {
+    switch(location.pathname) {
       case '/about': 
         return { bg: 'resume', main: 'about', sub: 'me' };
       case '/portfolio':
@@ -47,17 +49,17 @@ const Topbar = (props) => {
     <div 
       className="Topbar d-block d-sm-none"
       style={
-        props.location.pathname === '/' ? {
+        location.pathname === '/' ? {
           visibility: "hidden"
         } : null
       }
     >
       <Header type="topmenu" header={header} />
-      <Burger isClick={isClick} setClick={setClick} pathname={props.location.pathname} />
+      <Burger isClick={isClick} setClick={setClick} pathname={location.pathname} />
       <ul 
         className={isClick ? "nav nav-active" : "nav"}
         style={
-          props.location.pathname === '/' ? {
+          location.pathname === '/' ? {
             visibility: "visible"
           } : null
         }
@@ -68,7 +70,7 @@ const Topbar = (props) => {
               <Link 
                 to={item.url}
                 onClick={() => setClick(!isClick)}
-                className={ props.location.pathname === item.url ? "nav-item-active" : null}
+                className={ location.pathname === item.url ? "nav-item-active" : null}
               >
                 {item.icon}
                 <p>{item.name}</p>
@@ -80,5 +82,11 @@ const Topbar = (props) => {
     </div>
   );
 }
+
+Topbar.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string
+  })
+};
 
 export default withRouter(Topbar);

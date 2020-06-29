@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../css/Header.css';
 
@@ -17,5 +18,14 @@ const Header = (props) => {
     </div>
   );
 }
+
+Header.propTypes = {
+  type: PropTypes.string,
+  header: PropTypes.shape({
+    main: PropTypes.string,
+    sub: PropTypes.string,
+    bg: PropTypes.string
+  })
+};
 
 export default Header;

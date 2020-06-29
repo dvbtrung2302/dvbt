@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   FaFileAlt,
   FaUser,
@@ -19,18 +20,18 @@ const ProjectDetail = (props) => {
   return(
     <div className={`ProjectDetail ${active ? 'active' : ''}`}>
       <div className="overlay"></div>
-      <h1>{project.title || 'asdsa'}</h1>
+      <h1>{project.title || 'lorem ipsum'}</h1>
       <div className="row m-0 detail">
         {
           content.map(item => 
-            <div className="col-6 mb-3" key={item.key}>
+            <div className="content-wrapper col-6 mb-3" key={item.key}>
               {item.icon}
               <span className="key">{item.key}</span>
-              <span> : </span>
+              {`: `}
               {
                 item.key === 'preview' ? 
-                <a target="blank" href={item.value}>{item.value || 'asds'}</a> :
-                <span>{item.value || 'asdsa'}</span>
+                <a target="_blank" href={item.value} rel="noopener noreferrer">Link</a> :
+                <span className="value">{ item.value || 'lorem ipsum'}</span>
               }
             </div>
           )
@@ -42,5 +43,19 @@ const ProjectDetail = (props) => {
     </div>
   );
 }
+
+ProjectDetail.propTypes = {
+  active: PropTypes.bool,
+  project: PropTypes.shape({
+    title: PropTypes.string,
+    image: PropTypes.string,
+    detail: PropTypes.shape({
+      type: PropTypes.string,
+      client: PropTypes.string,
+      language: PropTypes.string,
+      preview: PropTypes.string,
+    })
+  })
+};
 
 export default ProjectDetail;

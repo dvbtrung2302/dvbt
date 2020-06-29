@@ -17,6 +17,7 @@ import Button from '../components/Button';
 const Contact = () => {
   const [ data, setData ] = useState({});
   const [ msg, setMsg ] = useState('');
+  const [ loading, setLoading] = useState(false);
   const header = { bg: 'contact', main: 'get in', sub: 'touch' };
 
   const info = [
@@ -38,10 +39,12 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setLoading(true);
     axios.post('https://dvbt-porfolio.herokuapp.com/api/form', data)
          .then(res => {
            setData({});
            setMsg('The message has been sent successfully!');
+           setLoading(false);
          })
          .catch(err => {
            setMsg('The message has been sent unsuccessfully!');
@@ -107,8 +110,14 @@ const Contact = () => {
             >
               {msg}
             </div>
-            <div className="col-lg-12">
-              <Button type="button" title="send message" icon={<FaPaperPlane />}/>
+            <div className="col-lg-12 align-items-center d-flex">
+              {
+                loading ?
+                <div class="spinner-border" role="status" style={{color:"var(--main-color)"}}>
+                  <span class="sr-only">Loading...</span>
+                </div> :
+                <Button type="button" title="send message" icon={<FaPaperPlane />}/>
+              }
             </div>
           </form>
         </div>

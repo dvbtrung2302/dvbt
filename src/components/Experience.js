@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../css/Experience.css';
 
@@ -19,5 +20,13 @@ const Experience = (props) => {
     </div>
   );
 }
+
+Experience.propTypes = {
+  icon: PropTypes.object,
+  time: PropTypes.string,
+  text: PropTypes.string,
+  place: PropTypes.string,
+  des: PropTypes.string,
+};
 
 export default Experience;

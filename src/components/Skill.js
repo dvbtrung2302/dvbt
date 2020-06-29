@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../css/Skill.css';
 
@@ -25,5 +26,12 @@ const Skill = (props) => {
     </div>
   );
 }
+
+Skill.propTypes = {
+  skill: PropTypes.shape({
+    name: PropTypes.string,
+    percent: PropTypes.number
+  })
+};
 
 export default Skill;

@@ -20,7 +20,7 @@ const Home = () => {
           </h1>
           <p>I am 20 years old, i am a second year student at the University of Information Technology. I have the desire to become a web designer & front‑end developer, I am passionate about building excellent website that improves the lives of those around me. </p>
           <div>
-            <Button title="more about me" icon={<FaUserAlt />} url="/dvbt/about" />  
+            <Button title="more about me" icon={<FaUserAlt />} url="/about" />  
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../css/Burger.css';
 
@@ -22,5 +23,11 @@ const Burger = (props) => {
     </div>
   );
 }
+
+Burger.propTypes = {
+  isClick: PropTypes.bool,
+  setClick: PropTypes.func,
+  pathname: PropTypes.string
+};
 
 export default Burger;

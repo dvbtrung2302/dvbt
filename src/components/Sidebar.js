@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { 
   Link,
   withRouter 
@@ -14,6 +15,7 @@ import {
 import '../css/Sidebar.css';
 
 const Sidebar = (props) => {
+  const { location } = props;
   const nav = [
     { name: 'HOME', url: '/', icon: <FaHome />},
     { name: 'ABOUT', url: '/about', icon: <FaUserAlt />},
@@ -29,7 +31,7 @@ const Sidebar = (props) => {
             <li key={item.name} className="nav-item">
               <Link 
                 to={item.url}
-                className={props.location.pathname === item.url ? "nav-active" : null}
+                className={location.pathname === item.url ? "nav-active" : null}
               >
                 {item.icon}
                 <p className="nav-name">{item.name}</p>
@@ -41,5 +43,11 @@ const Sidebar = (props) => {
     </div>
   );
 }
+
+Sidebar.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string
+  })
+};
 
 export default withRouter(Sidebar);

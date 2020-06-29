@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../css/Achievement.css';
 
@@ -15,5 +16,13 @@ const Achievement = (props) => {
     </div>
   );
 }
+
+Achievement.propTypes = {
+  item: PropTypes.shape({
+    amount: PropTypes.string,
+    text: PropTypes.string,
+    subText: PropTypes.string
+  })
+};
 
 export default Achievement;

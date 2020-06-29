@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../css/MobileAvatar.css';
 
@@ -13,6 +14,10 @@ const MobileAvatar = (props) => {
       }
     ></div>
   );
+}
+
+MobileAvatar.propTypes = {
+  type: PropTypes.string
 }
 
 export default MobileAvatar;

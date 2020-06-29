@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import '../css/Preloader.css';
 
@@ -12,5 +13,9 @@ const Preloader = (props) => {
     </div>
   );
 }
+
+Preloader.propTypes = {
+  loading: PropTypes.bool
+};
 
 export default Preloader;
