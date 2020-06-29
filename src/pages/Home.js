@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaUserAlt } from 'react-icons/fa';
 
 import '../css/Home.css';
@@ -6,6 +6,10 @@ import Button from '../components/Button';
 import MobileAvatar from '../components/MobileAvatar';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'Bao Trung - Personal Portfolio';
+  });
+
   return(
     <div className="Home container-fluid p-xl-5">
       <div className="color-block d-xl-block d-none"></div>

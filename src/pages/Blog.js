@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Header from '../components/Header';
 
 const Blog = () => {
+  useEffect(() => {
+    document.title = 'Blog - Bao Trung Personal Portfolio'
+  });
+
   const header = { bg: 'post', main: 'my', sub: 'blogs' };
-  
+
   return(
     <div className="Blog container">
       <div className="row d-flex justify-content-center">

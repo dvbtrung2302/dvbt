@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { 
   FaEnvelopeOpen,
@@ -19,6 +19,10 @@ const Contact = () => {
   const [ msg, setMsg ] = useState('');
   const [ loading, setLoading] = useState(false);
   const header = { bg: 'contact', main: 'get in', sub: 'touch' };
+
+  useEffect(() => {
+    document.title = 'Contact - Bao Trung Personal Portfolio';
+  });
 
   const info = [
     { icon: <FaEnvelopeOpen size={40} />, header: 'mail me', content: 'dvbtrung23@gmail.com' },

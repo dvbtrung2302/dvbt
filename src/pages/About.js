@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   FaDownload,
   FaGraduationCap,
@@ -14,6 +14,9 @@ import Skill from '../components/Skill';
 import Experience from '../components/Experience';
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'About - Bao Trung Personal Portfolio'
+  })
   const content = [
     { key: 'first name', value: 'Dang'},
     { key: 'last name', value: 'Trung'},

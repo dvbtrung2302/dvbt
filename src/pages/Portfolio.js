@@ -1,4 +1,4 @@
-import React, { useState, useRef, createRef } from 'react';
+import React, { useState, useRef, createRef, useEffect } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 import '../css/Portfolio.css';
@@ -71,6 +71,10 @@ const Portfolio = () => {
   const [ outClass, setOutCLass ] = useState('');
   const [ project, setProject ] = useState({});
   const [ active, setActive ] = useState(false);
+
+  useEffect(() => {
+    document.title = 'Portfolio - Bao Trung Personal Portfolio';
+  });
 
   const getDirection = (event, item) => {
     const w = item.current.offsetWidth;
