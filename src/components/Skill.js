@@ -15,7 +15,7 @@ const Skill = (props) => {
             cy="70" 
             r="70"  
             style={{
-              strokeDashoffset: `calc(440 - (440 * ${skill.percent}) / 100)`
+              strokeDashoffset: calc(440 - (440 * skill.percent) / 100) < 0 ? `-calc(440 - (440 * ${skill.percent}) / 100)` : `calc(440 - (440 * ${skill.percent}) / 100)`
             }}></circle>
         </svg>
         <div className="number">
