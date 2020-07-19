@@ -1,5 +1,6 @@
 .Home {
-  min-height: -webkit-fill-available;
+  height: 100vh;
+  max-height: -webkit-fill-available;
   position: relative;
   overflow: hidden;
 }
