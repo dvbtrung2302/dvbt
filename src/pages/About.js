@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import {
   FaDownload,
-  FaGraduationCap,
-  FaBriefcase
+  FaGraduationCap
 } from 'react-icons/fa';
 
 import '../css/About.css';
@@ -51,10 +50,7 @@ const About = () => {
   ];
 
   const experience = [
-    { icon: <FaGraduationCap />, time: '2018-present', text: 'engineering degree', place: 'University of Information Technology', des: 'Learn Information Technology, major in Information System'},
-    { icon: <FaBriefcase />, time: '2020', text: 'lorem ipsum', place: 'Some place', des: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore'},
-    { icon: <FaBriefcase />, time: '2020', text: 'lorem ipsum', place: 'Some place', des: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labora'},
-    { icon: <FaBriefcase />, time: '2020', text: 'lorem ipsum', place: 'Some place', des: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut laborc'},
+    { icon: <FaGraduationCap />, time: '2018-present', text: 'engineering degree', place: 'University of Information Technology', des: 'Learn Information Technology, major in Information System'}
   ];
 
   return(

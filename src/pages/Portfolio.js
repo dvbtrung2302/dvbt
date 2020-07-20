@@ -55,11 +55,7 @@ const projects = [
       language: 'JavaScript(React), CSS',
       preview: '#'
     }
-  },
-  { image: 'https://via.placeholder.com/340x170.png?text=Image'},
-  { image: 'https://via.placeholder.com/340x170.png?text=Image'},
-  { image: 'https://via.placeholder.com/340x170.png?text=Image'},
-  { image: 'https://via.placeholder.com/340x170.png?text=Image'}
+  }
 ];
 
 const Portfolio = () => {
