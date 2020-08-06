@@ -86,7 +86,7 @@ const About = () => {
               }
             </ul>
             <div className="col">
-              <Button title="download cv" icon={<FaDownload />}/>
+              <Button type="download" url='https://res.cloudinary.com/dofqucuyy/image/upload/v1596724684/portfolio/CV.pdf' title="download cv" icon={<FaDownload />}/>
             </div>
           </div>
         </div>

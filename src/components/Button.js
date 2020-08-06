@@ -6,23 +6,34 @@ import '../css/Button.css';
 
 const Button = (props) => {
   const { type, title, icon, url} = props;
+  const renderButton = () => {
+    switch (type) {
+      case 'button':
+        return <button type="submit">
+                  <p>
+                    {title}
+                  </p>
+                  {icon}
+                </button>
+      case 'download': 
+        return <a href={url} download="cv">
+                  <p>
+                    {title}
+                  </p>
+                  {icon}
+                </a>
+      default:
+        return <Link to={url || ''}>
+                  <p>
+                    {title}
+                  </p>
+                  {icon}
+                </Link>
+    }
+  }
   return(
     <div className="Button">
-      {
-        type === 'button' ?
-        <button type="submit">
-          <p>
-            {title}
-          </p>
-          {icon}
-        </button> :
-        <Link to={url || ''}>
-          <p>
-            {title}
-          </p>
-          {icon}
-        </Link>
-      }
+      { renderButton() }
     </div>
   );
 }
