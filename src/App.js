@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 import Sidebar from './components/Sidebar';
 import Topbar from './components/Topbar';
@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={<Preloader />}>
-        <Router basename="/dvbt">
+        <Router>
           <Route exact path={["/", "/about", "/portfolio", "/contact", "/blog"]} component={Topbar} />
           <Route exact path={["/", "/about", "/portfolio", "/contact", "/blog"]} component={Sidebar} />
           <Switch>
