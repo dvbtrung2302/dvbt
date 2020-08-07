@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[8],{80:function(e,t,o){"use strict";o.r(t);var n=o(0),a=o.n(n),s=o(13);t.default=function(){Object(n.useEffect)((function(){document.title="Blog - Bao Trung Personal Portfolio"}));return a.a.createElement("div",{className:"Blog container"},a.a.createElement("div",{className:"row d-flex justify-content-center"},a.a.createElement(s.a,{header:{bg:"post",main:"my",sub:"blogs"}})),a.a.createElement("div",{style:{color:"#fff"}},"No posts yet."))}}}]);
+//# sourceMappingURL=8.047411e7.chunk.js.map

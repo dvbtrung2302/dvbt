@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/dvbt/static/css/main.3e2d8ec8.chunk.css",
+    "main.js": "/dvbt/static/js/main.03259e7b.chunk.js",
+    "main.js.map": "/dvbt/static/js/main.03259e7b.chunk.js.map",
+    "runtime-main.js": "/dvbt/static/js/runtime-main.4e1b2812.js",
+    "runtime-main.js.map": "/dvbt/static/js/runtime-main.4e1b2812.js.map",
+    "static/js/2.6d56105e.chunk.js": "/dvbt/static/js/2.6d56105e.chunk.js",
+    "static/js/2.6d56105e.chunk.js.map": "/dvbt/static/js/2.6d56105e.chunk.js.map",
+    "static/js/3.e7ecf3e2.chunk.js": "/dvbt/static/js/3.e7ecf3e2.chunk.js",
+    "static/js/3.e7ecf3e2.chunk.js.map": "/dvbt/static/js/3.e7ecf3e2.chunk.js.map",
+    "static/css/4.f4eb596d.chunk.css": "/dvbt/static/css/4.f4eb596d.chunk.css",
+    "static/js/4.8d1a5564.chunk.js": "/dvbt/static/js/4.8d1a5564.chunk.js",
+    "static/js/4.8d1a5564.chunk.js.map": "/dvbt/static/js/4.8d1a5564.chunk.js.map",
+    "static/css/5.117fe5d7.chunk.css": "/dvbt/static/css/5.117fe5d7.chunk.css",
+    "static/js/5.a123af13.chunk.js": "/dvbt/static/js/5.a123af13.chunk.js",
+    "static/js/5.a123af13.chunk.js.map": "/dvbt/static/js/5.a123af13.chunk.js.map",
+    "static/css/6.90aa7ed0.chunk.css": "/dvbt/static/css/6.90aa7ed0.chunk.css",
+    "static/js/6.06a8d1aa.chunk.js": "/dvbt/static/js/6.06a8d1aa.chunk.js",
+    "static/js/6.06a8d1aa.chunk.js.map": "/dvbt/static/js/6.06a8d1aa.chunk.js.map",
+    "static/css/7.839ed32d.chunk.css": "/dvbt/static/css/7.839ed32d.chunk.css",
+    "static/js/7.db385ab6.chunk.js": "/dvbt/static/js/7.db385ab6.chunk.js",
+    "static/js/7.db385ab6.chunk.js.map": "/dvbt/static/js/7.db385ab6.chunk.js.map",
+    "static/js/8.047411e7.chunk.js": "/dvbt/static/js/8.047411e7.chunk.js",
+    "static/js/8.047411e7.chunk.js.map": "/dvbt/static/js/8.047411e7.chunk.js.map",
+    "index.html": "/dvbt/index.html",
+    "precache-manifest.9b7eef722f5977c6578d8ede5784232c.js": "/dvbt/precache-manifest.9b7eef722f5977c6578d8ede5784232c.js",
+    "service-worker.js": "/dvbt/service-worker.js",
+    "static/css/4.f4eb596d.chunk.css.map": "/dvbt/static/css/4.f4eb596d.chunk.css.map",
+    "static/css/5.117fe5d7.chunk.css.map": "/dvbt/static/css/5.117fe5d7.chunk.css.map",
+    "static/css/6.90aa7ed0.chunk.css.map": "/dvbt/static/css/6.90aa7ed0.chunk.css.map",
+    "static/css/7.839ed32d.chunk.css.map": "/dvbt/static/css/7.839ed32d.chunk.css.map",
+    "static/css/main.3e2d8ec8.chunk.css.map": "/dvbt/static/css/main.3e2d8ec8.chunk.css.map",
+    "static/js/3.e7ecf3e2.chunk.js.LICENSE.txt": "/dvbt/static/js/3.e7ecf3e2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4e1b2812.js",
+    "static/js/3.e7ecf3e2.chunk.js",
+    "static/css/main.3e2d8ec8.chunk.css",
+    "static/js/main.03259e7b.chunk.js"
+  ]
+}
