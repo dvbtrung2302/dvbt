@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b1424557e73b924bae07d4e5b084b896",
+    "revision": "932096658a8c89b032e522b995cc4a87",
     "url": "/dvbt/index.html"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dvbt/static/css/7.839ed32d.chunk.css"
   },
   {
-    "revision": "1ea399fa71e4bb67194a",
+    "revision": "0f9e485d38d4a6748d24",
     "url": "/dvbt/static/css/main.3e2d8ec8.chunk.css"
   },
   {
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dvbt/static/js/8.047411e7.chunk.js"
   },
   {
-    "revision": "1ea399fa71e4bb67194a",
-    "url": "/dvbt/static/js/main.47596bb5.chunk.js"
+    "revision": "0f9e485d38d4a6748d24",
+    "url": "/dvbt/static/js/main.205e7d5a.chunk.js"
   },
   {
     "revision": "2d615e79aab2182b764e",
