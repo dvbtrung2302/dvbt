@@ -16,7 +16,7 @@ const Button = (props) => {
                   {icon}
                 </button>
       case 'download': 
-        return <a href={url} download="cv">
+        return <a href={url} download>
                   <p>
                     {title}
                   </p>
