@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dce20f335ff0586b761baa3833fc6bad",
+    "revision": "b1424557e73b924bae07d4e5b084b896",
     "url": "/dvbt/index.html"
   },
   {
-    "revision": "106dd888627708820a65",
+    "revision": "614289b8fc9541241b13",
     "url": "/dvbt/static/css/4.f4eb596d.chunk.css"
   },
   {
-    "revision": "4db1b65e308003f4fd0f",
+    "revision": "4abdde4339f68f401cd3",
     "url": "/dvbt/static/css/5.117fe5d7.chunk.css"
   },
   {
-    "revision": "75258335647d98389c8a",
+    "revision": "069e8e9dc9877f8ea5e4",
     "url": "/dvbt/static/css/6.90aa7ed0.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dvbt/static/css/7.839ed32d.chunk.css"
   },
   {
-    "revision": "20461142f08d92243f2b",
+    "revision": "1ea399fa71e4bb67194a",
     "url": "/dvbt/static/css/main.3e2d8ec8.chunk.css"
   },
   {
@@ -28,24 +28,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dvbt/static/js/2.6d56105e.chunk.js"
   },
   {
-    "revision": "4352e464973b8502ef81",
-    "url": "/dvbt/static/js/3.e7ecf3e2.chunk.js"
+    "revision": "780c2d2101960498d5ac",
+    "url": "/dvbt/static/js/3.d1d4153d.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/dvbt/static/js/3.e7ecf3e2.chunk.js.LICENSE.txt"
+    "url": "/dvbt/static/js/3.d1d4153d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "106dd888627708820a65",
-    "url": "/dvbt/static/js/4.8d1a5564.chunk.js"
+    "revision": "614289b8fc9541241b13",
+    "url": "/dvbt/static/js/4.498b0eff.chunk.js"
   },
   {
-    "revision": "4db1b65e308003f4fd0f",
-    "url": "/dvbt/static/js/5.a123af13.chunk.js"
+    "revision": "4abdde4339f68f401cd3",
+    "url": "/dvbt/static/js/5.eb87cebc.chunk.js"
   },
   {
-    "revision": "75258335647d98389c8a",
-    "url": "/dvbt/static/js/6.06a8d1aa.chunk.js"
+    "revision": "069e8e9dc9877f8ea5e4",
+    "url": "/dvbt/static/js/6.96881650.chunk.js"
   },
   {
     "revision": "4202ad3af08cf2752530",
@@ -56,11 +56,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dvbt/static/js/8.047411e7.chunk.js"
   },
   {
-    "revision": "20461142f08d92243f2b",
-    "url": "/dvbt/static/js/main.03259e7b.chunk.js"
+    "revision": "1ea399fa71e4bb67194a",
+    "url": "/dvbt/static/js/main.47596bb5.chunk.js"
   },
   {
-    "revision": "76b1f0312b80c9d845e1",
-    "url": "/dvbt/static/js/runtime-main.4e1b2812.js"
+    "revision": "2d615e79aab2182b764e",
+    "url": "/dvbt/static/js/runtime-main.6f173fe7.js"
   }
 ]);
